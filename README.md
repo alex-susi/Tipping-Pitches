@@ -10,6 +10,7 @@
 ## Code and Resources used
 **R Version:** 4.02  
 **RStudio Version:** 1.3.959  
-**Packages:** dplyr, baseballr, tidyverse, DBI, ggplot2, reshape2, caret, class
-**Statcast Data Scraper:** https://github.com/BillPetti/baseballr/blob/master/R/scrape_statcast.R
+**Packages:** dplyr, baseballr, tidyverse, DBI, ggplot2, reshape2, caret, class 
+**Statcast Data Scraper:** https://github.com/BillPetti/baseballr/blob/master/R/scrape_statcast.R 
+
 
