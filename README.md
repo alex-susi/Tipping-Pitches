@@ -20,3 +20,10 @@
 * I wanted to approach this problem from the perspective of a batter - pitchers will sometimes [tip their pitches](https://inningace.com/faqs/baseball/what-is-pitch-tipping/) with visual clues such as variations in their windups and holding their glove differently. A pitcher who is tipping his pitches inadvertently reveals clues as to what kind of pitch he is about to throw. If a hitter is able to pick up on these clues, it puts him at a considerable advantage over the pitcher. Unforunately, most of these visual clues are not tracked by Statcast (yet). However, there is one metric that can be investigated to see if a pitcher tips his pitches: release point. 
 * I scraped Statcast data for the entire 2021 MLB Regular Season (as of 9/13/2021). The dataset includes all sorts of tracking data, but I was interested in examining [pitch_type], [release_pos_x], and [release_pos_z]. I wanted to figure out if it is possible to predict the pitch type based on the X and Z coordinates a pitch is thrown at. 
 * Considering the goal at hand is trying to figure out specifically which pitchers tip their pitches, it made sense to look at pitches for each pitcher separately.
+
+
+## Model Building
+* To make sure I was looking at sufficiently large data sets, I filtered only for pitchers with at least 500 pitches thrown in the 2021 season.  
+* Additionally, for each pitcher, I filtered out any pitch that accounted for less than 1% of their total pitches thrown. This was to avoid cases where a pitcher may have thrown a certain pitch only a couple times over the course of the season, and is not part of the pitcher's typical pitching arsenal.
+* The final KNN model is as follows:
+*pitch_type ~ release_pos_x + release_pos_z*
