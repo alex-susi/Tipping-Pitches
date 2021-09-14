@@ -33,18 +33,18 @@
 ## Results
 * For each pitcher, I generated a confusion matrix, and calculated the accuracy of the model by looking at the diagonal of the confusion matrix. 
 * Below are the top 10 pitchers with the highest score on the predictive model (i.e. these pitchers tip their pitches the most): 
-| Rank | Pitcher | Model Accuracy  | 
-| ---- |:-------:| ------:|
-| 1 | Ian Kennedy | 0.9142857 | 
-| 2 | Edwin Diaz | 0.9124579 | 
-| 3 | Joey Lucchesi | 0.9103774 |  
-| 4 | Matt Wisler | 0.9040000 | 
-| 5 | Josh Hader | 0.8959108 |
-| 6 | Richard Rodriguez | 0.8888889 |
-| 7 | Jake McGee | 0.8854167 |
-| 8 | Sean Doolittle | 0.8664122 |
-| 9 | Amir Garrett | 0.8658009 |
-| 10 | Austin Adams | 0.8655172 |
+| Rank | Pitcher            | Model Accuracy  | 
+| ---- |:------------------:| ---------------:|
+| 1    | Ian Kennedy        | 0.9142857       | 
+| 2    | Edwin Diaz         | 0.9124579       | 
+| 3    | Joey Lucchesi      | 0.9103774       |  
+| 4    | Matt Wisler        | 0.9040000       | 
+| 5    | Josh Hader         | 0.8959108       |
+| 6    | Richard Rodriguez  | 0.8888889       |
+| 7    | Jake McGee         | 0.8854167       |
+| 8    | Sean Doolittle     | 0.8664122       |
+| 9    | Amir Garrett       | 0.8658009       |
+| 10   | Austin Adams       | 0.8655172       |
 
 
 
