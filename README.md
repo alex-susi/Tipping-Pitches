@@ -24,5 +24,10 @@
 ## Model Building
 * To make sure I was looking at sufficiently large data sets, I filtered only for pitchers with at least 500 pitches thrown in the 2021 season.  
 * Additionally, for each pitcher, I filtered out any pitch that accounted for less than 1% of their total pitches thrown. This was to avoid cases where a pitcher may have thrown a certain pitch only a couple times over the course of the season, and is not part of the pitcher's typical pitching arsenal.
+* Additionally, there were some bad data points with N/A listed as either the [pitch_type], [release_pos_x], and/or [release_pos_z], so I made sure to drop these from the analysis
 * The final KNN model is as follows:  
 *pitch_type ~ release_pos_x + release_pos_z*
+
+
+## Results
+
