@@ -15,3 +15,6 @@
 **Statcast Data Scraper:** https://github.com/BillPetti/baseballr/blob/master/R/scrape_statcast.R 
 
 
+
+## Methodology
+# 
