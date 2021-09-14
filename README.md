@@ -49,6 +49,7 @@
 
 
 * And here are the pitchers who tip their pitches the least, according to the model:   
+
 | Rank | Pitcher            | Model Accuracy  | 
 | ---- |:------------------:| ---------------:|
 | 1    | Kyle Gibson        | 0.2770186       | 
