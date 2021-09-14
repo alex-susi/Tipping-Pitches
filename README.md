@@ -48,4 +48,19 @@
 | 10   | Austin Adams       | 0.8655172       |
 
 
+* And here are the pitchers who tip their pitches the least, according to the model:   
+| Rank | Pitcher            | Model Accuracy  | 
+| ---- |:------------------:| ---------------:|
+| 1    | Kyle Gibson        | 0.2770186       | 
+| 2    | Matt Harvey        | 0.2774566       | 
+| 3    | Frankie Montas     | 0.2904368       |  
+| 4    | Carlos Martinez    | 0.3024390       | 
+| 5    | Alex Reyes         | 0.3057851       |
+| 6    | Mike Foltynewicz   | 0.3083969       |
+| 7    | Brandon Woodruff   | 0.3107275       |
+| 8    | Tony Watson        | 0.3120000       |
+| 9    | Corey Kluber       | 0.3125000       |
+| 10   | Pablo Lopez        | 0.3125000       |
+
+
 
