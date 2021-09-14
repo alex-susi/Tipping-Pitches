@@ -32,7 +32,8 @@
 
 ## Results
 * For each pitcher, I generated a confusion matrix, and calculated the accuracy of the model by looking at the diagonal of the confusion matrix. 
-* Below are the top 10 pitchers with the highest score on the predictive model (i.e. these pitchers tip their pitches the most): 
+* Below are the top 10 pitchers with the highest score on the predictive model (i.e. these pitchers tip their pitches the most):   
+
 | Rank | Pitcher            | Model Accuracy  | 
 | ---- |:------------------:| ---------------:|
 | 1    | Ian Kennedy        | 0.9142857       | 
