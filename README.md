@@ -10,8 +10,7 @@
 ## Code and Resources used
 **R Version:** 4.02  
 **RStudio Version:** 1.3.959  
-**Packages:** dplyr, baseballr, tidyverse, DBI, ggplot2, reshape2, caret, class 
-
+**Packages:** dplyr, baseballr, tidyverse, DBI, ggplot2, reshape2, caret, class   
 **Statcast Data Scraper:** https://github.com/BillPetti/baseballr/blob/master/R/scrape_statcast.R   
 
 
@@ -25,5 +24,5 @@
 ## Model Building
 * To make sure I was looking at sufficiently large data sets, I filtered only for pitchers with at least 500 pitches thrown in the 2021 season.  
 * Additionally, for each pitcher, I filtered out any pitch that accounted for less than 1% of their total pitches thrown. This was to avoid cases where a pitcher may have thrown a certain pitch only a couple times over the course of the season, and is not part of the pitcher's typical pitching arsenal.
-* The final KNN model is as follows:
+* The final KNN model is as follows:  
 *pitch_type ~ release_pos_x + release_pos_z*
