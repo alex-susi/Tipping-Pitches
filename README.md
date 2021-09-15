@@ -48,7 +48,7 @@
 | 10   | Austin Adams       | 0.8655172       |
 * For example, the model correctly predicted about 91.4% of Ian Kennedy's pitch types based on the release points of his pitches.   
 
-<img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Ian%20Kennedy.png" width="410"><img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Edwin%20Diaz.png" width="410">
+<img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Ian%20Kennedy.png" width="450"> <img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Edwin%20Diaz.png" width="450">
 <br/><br/><br/><br/>
 
 
