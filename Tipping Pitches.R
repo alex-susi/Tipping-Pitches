@@ -76,18 +76,40 @@ kluber <- statcast2021_p %>%
 lucchesi <- statcast2021_p %>%
   filter(PLAYERNAME == "Joey Lucchesi")
 
+kennedy <- statcast2021_p %>%
+  filter(PLAYERNAME == "Ian Kennedy")
+
+diaz <- statcast2021_p %>%
+  filter(PLAYERNAME == "Edwin Diaz")
+
+gibson <- statcast2021_p %>%
+  filter(PLAYERNAME == "Kyle Gibson")
+
+harvey <- statcast2021_p %>%
+  filter(PLAYERNAME == "Matt Harvey")
+
 
 # RHP Graph
-pitch_releases <- lucchesi %>%
+pitch_releases <- kennedy %>%
   ggplot(aes(x = release_pos_x, y = release_pos_z)) +
   coord_equal() + 
-  scale_x_continuous("Horizontal Release Point (ft.)", limits = c(-2.6, -1.4)) +  
-  scale_y_continuous("Vertical Release Point (ft.)",  limits = c(5, 6.25)) +
-  geom_point(aes(color = factor(pitch_type), size = 0.5))
+  scale_x_continuous("Horizontal Release Point from Catcher's Perspective (ft.)",
+                     limits = c(-2.1, -1.1)) +  
+  scale_y_continuous("Vertical Release Point from Catcher's Perspective (ft.)",  
+                     limits = c(5.1, 5.9)) +
+  geom_point(aes(color = factor(pitch_type), size = 0.1)) +
+  guides(size = FALSE) +
+  labs(color = "Pitch Type") +
+  ggtitle("Ian Kennedy Pitch Type by Release Point") +
+  theme(plot.title = element_text(hjust = 0.5))
+png("Matt Harvey.png")
+pitch_releases
+dev.off()
+
 
 
 # LHP Graph
-pitch_releases <- lucchesi %>%
+pitch_releases <- kennedy %>%
   ggplot(aes(x = release_pos_x, y = release_pos_z)) +
   coord_equal() + 
   scale_x_continuous("Horizontal Release Point (ft.)", limits = c(1.5, 3.5)) +  
@@ -161,11 +183,14 @@ df[1,] <- c('cishek' , sum(diag(cm$table)/sum(cm$table)))
 ## KNN Function for any Pitcher ---------------------------------------------
 tipping <- function(pp) {
   
+  
+  # Filters for specific pitcher, excludes NA's
   statcast_filtered <- statcast2021_p %>%
     filter(PLAYERNAME == pp, !is.na(pitch_type), 
            !is.na(release_pos_x), !is.na(release_pos_z))
   
   
+  # Only looking at Pitchers with at least 500 pitches thrown
   if ((length(unique(statcast_filtered$pitch_type)) > 1) && 
       (nrow(statcast_filtered)) > 500) {
     
@@ -178,12 +203,14 @@ tipping <- function(pp) {
     statcast_filtered <- merge(statcast_filtered, df, 
                                by.x = 'pitch_type', by.y = 'pitch_type')
     
+    # Don't want to consider pitches that a pitcher rarely throws
     statcast_filtered <- statcast_filtered %>%
       filter(freq > 0.01)
     
     statcast_filtered <- statcast_filtered %>%
       select(PLAYERNAME, pitch_type, release_pos_x, release_pos_z)
     
+    # Creating Training and Testing Sets
     set.seed(1234)
     ind <- sample(2, nrow(statcast_filtered), replace = TRUE, prob = c(0.67, 0.33))
     
@@ -204,15 +231,13 @@ tipping <- function(pp) {
                     test = test,
                     cl = trainLabels,
                     k = 3)
-    # knn_pred
     
     TestLabels <- data.frame(testLabels)
     merge <- data.frame(knn_pred, testLabels)
     names(merge) <- c("Predicted Pitch",
                       "Observed Pitch")
     
-    
-    
+    # Confusion Matrix
     cm <- confusionMatrix(knn_pred, as.factor(testLabels))
     accuracy <- sum(diag(cm$table)/sum(cm$table))
     
@@ -252,8 +277,8 @@ for (x in all_pitchers1) {
 
 
 pitchers_tipping
-pitchers_tipping %>%
-  arrange(desc(Model_Accuracy))
+pitchers_tipping[1:2] %>%
+  arrange((Model_Accuracy))
 pitchers_tipping$Model_Accuracy <- as.numeric(pitchers_tipping$Model_Accuracy)
 
 
