@@ -70,6 +70,6 @@
 | 10   | Pablo Lopez        | 0.3125000       |
 * In contrast, the model correctly predicted only about 27.7% of Kyle Gibson's and Matt Harvey's pitch types based on the release points.
 * The graphs below display the release points of each pitch for Kyle Gibson and Matt Harvey, colored by pitch type.  
-
+* For Gibson and Harvey, the release points vary much more for each pitch type in their arsenals. Therefore, the model had a harder time accurately predicting the kind of pitch these 2 pitchers were throwing based solely on release point.
 <img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Kyle%20Gibson.png" height="310"> <img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Matt%20Harvey.png" height="310">
 
