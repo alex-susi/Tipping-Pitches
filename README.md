@@ -46,7 +46,9 @@
 | 8    | Sean Doolittle     | 0.8664122       |
 | 9    | Amir Garrett       | 0.8658009       |
 | 10   | Austin Adams       | 0.8655172       |
-* For example, the model correctly predicted about 91.4% of Ian Kennedy's pitch types based on the release points of his pitches.   
+* For example, the model correctly predicted about 91.4% of Ian Kennedy's pitch types and about 91.2% of Edwin Diaz's pitch types based on the release points of their pitches.
+* The graphs below display the release points of each pitch for Ian Kennedy and Edwin Diaz, colored by pitch type
+* Notice how for these 2 pitchers, they tend to consistently release certain pitches from roughly the same area.   
 
 <img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Ian%20Kennedy.png" height="400"> <img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Edwin%20Diaz.png" height="400">
 <br/><br/><br/><br/>
