@@ -46,6 +46,9 @@
 | 8    | Sean Doolittle     | 0.8664122       |
 | 9    | Amir Garrett       | 0.8658009       |
 | 10   | Austin Adams       | 0.8655172       |
+* For example, the model correctly predicted about 91.4% of Ian Kennedy's pitch types based on the release points of his pitches.   
+
+
 
 
 * And here are the pitchers who tip their pitches the least, according to the model:   
@@ -62,6 +65,7 @@
 | 8    | Tony Watson        | 0.3120000       |
 | 9    | Corey Kluber       | 0.3125000       |
 | 10   | Pablo Lopez        | 0.3125000       |
+* In contrast, the model correctly predicted only about 27.7% of Kyle Gibson's pitches based on the release points.  
 
 
 
