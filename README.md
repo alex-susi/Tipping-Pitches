@@ -48,7 +48,7 @@
 | 10   | Austin Adams       | 0.8655172       |
 * For example, the model correctly predicted about 91.4% of Ian Kennedy's pitch types based on the release points of his pitches.   
 
-
+<br/><br/>
 
 
 * And here are the pitchers who tip their pitches the least, according to the model:   
