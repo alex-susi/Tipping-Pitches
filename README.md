@@ -1,4 +1,4 @@
-# Tipping-Pitches
+# Tipping Pitches
 
 ## Project Overview
 * Using the KNN model to classify pitch type for each MLB pitcher based on release point.
@@ -47,7 +47,7 @@
 | 9    | Amir Garrett       | 0.8658009       |
 | 10   | Austin Adams       | 0.8655172       |
 * For example, the model correctly predicted about 91.4% of Ian Kennedy's pitch types and about 91.2% of Edwin Diaz's pitch types based on the release points of their pitches.
-* The graphs below display the release points of each pitch for Ian Kennedy and Edwin Diaz, colored by pitch type
+* The graphs below display the release points of each pitch for Ian Kennedy and Edwin Diaz, colored by pitch type.
 * Notice how for these 2 pitchers, they tend to consistently release certain pitches from roughly the same area.   
 
 <img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Ian%20Kennedy.png" height="400"> <img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Edwin%20Diaz.png" height="400">
@@ -68,7 +68,8 @@
 | 8    | Tony Watson        | 0.3120000       |
 | 9    | Corey Kluber       | 0.3125000       |
 | 10   | Pablo Lopez        | 0.3125000       |
-* In contrast, the model correctly predicted only about 27.7% of Kyle Gibson's pitches based on the release points.  
+* In contrast, the model correctly predicted only about 27.7% of Kyle Gibson's and Matt Harvey's pitch types based on the release points.
+* The graphs below display the release points of each pitch for Kyle Gibson and Matt Harvey, colored by pitch type.  
 
-
+<img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Kyle%20Gibson.png" height="400"> <img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Matt%20Harvey.png" height="400">
 
