@@ -47,8 +47,10 @@
 | 9    | Amir Garrett       | 0.8658009       |
 | 10   | Austin Adams       | 0.8655172       |
 * For example, the model correctly predicted about 91.4% of Ian Kennedy's pitch types based on the release points of his pitches.   
-
-<br/><br/>
+<br/>
+<img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Ian%20Kennedy.png" width="410">
+<img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Edwin%20Diaz.png" width="410">
+<br/><br/><br/><br/>
 
 
 * And here are the pitchers who tip their pitches the least, according to the model:   
