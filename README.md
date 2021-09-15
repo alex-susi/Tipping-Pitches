@@ -50,7 +50,7 @@
 * The graphs below display the release points of each pitch for Ian Kennedy and Edwin Diaz, colored by pitch type.
 * Notice how for these 2 pitchers, they tend to consistently release certain pitches from roughly the same area.   
 
-<img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Ian%20Kennedy.png" height="400"> <img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Edwin%20Diaz.png" height="400">
+<img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Ian%20Kennedy.png" width="400"> <img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Edwin%20Diaz.png" width="400">
 <br/><br/><br/><br/>
 
 
@@ -72,5 +72,11 @@
 * The graphs below display the release points of each pitch for Kyle Gibson and Matt Harvey, colored by pitch type.  
 * For Gibson and Harvey, the release points vary much more for each pitch type in their arsenals. Therefore, the model had a harder time accurately predicting the kind of pitch these 2 pitchers were throwing based solely on release point.  
 
-<img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Kyle%20Gibson.png" height="300"> <img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Matt%20Harvey.png" height="300">
+<img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Kyle%20Gibson.png" width="300"> <img src="https://github.com/alex-susi/Tipping-Pitches/blob/master/Matt%20Harvey.png" width="300">
 
+
+
+
+# Conclusion and Future Steps
+* While certainly not all-encompassing for determining who tips their pitches the most (there are many other factors indicating pitch-tipping that are not currently tracked by Statcast), these results do give some insight as to which pitchers may reveal what pitch they are about to throw based on where they release a pitch. 
+* For example, with some film study, teams could see that 
